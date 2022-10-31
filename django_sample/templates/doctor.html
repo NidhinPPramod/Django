@@ -1,9 +1,22 @@
 {% extends "base.html" %}
 
 {% block title %}
-Booking
+Doctors
 {% endblock %}
 
 {% block content %}
-<h1>Doctors Page</h1>
+<h1 class="text-center">Our Doctors</h1>
+<hr/>
+<div class="container p-3 bg-success text-center d-flex justify-content-center">
+{% for d in doc %}
+<div class="card mx-2 text-center" style="width: 18rem;">
+    <img class="card-img-top" src="{{d.doc_image.url}}" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">{{d.doc_name}}</h5>
+        <p class="card-text">{{d.doc_spec}}</p>
+        <h6>{{d.dep_name}}</h6>
+    </div>
+</div>
+{% endfor %}
+<div>
 {% endblock %}
