@@ -14,6 +14,18 @@
     </head>
     <body>
         <h1>HomePage</h1>
+        {% comment %} {% if num > 0 %}
+            <h1>Possitive</h1>
+        {% elif num < 0 %}
+            <h1>Negative</h1>
+        {% else %}
+            <h1>Neither</h1>
+        {% endif %} {% endcomment %}
+        {% for n in fruits %}
+            <h2>{{n}}</h2>
+        {% endfor %}
+
+
         <script src="" async defer></script>
     </body>
 </html>
