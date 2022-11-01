@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'home',
+    'home','crispy_forms'
 ]
 
 MIDDLEWARE = [
@@ -130,3 +130,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_ROOT=BASE_DIR/'uploads'
 MEDIA_URL= '/media/'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
